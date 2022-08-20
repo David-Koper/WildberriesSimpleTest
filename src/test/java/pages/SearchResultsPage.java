@@ -11,7 +11,7 @@ public class SearchResultsPage {
 
     public void addToBasket(String productName) throws InterruptedException {
 
-        $$(".product-card__brand").filterBy(text(productName)).first().hover();
+        $$(".goods-name").filterBy(text(productName)).first().hover();
         sleep(1000);
         //$(".btn-main").click();
         String toBasket = "В корзину";

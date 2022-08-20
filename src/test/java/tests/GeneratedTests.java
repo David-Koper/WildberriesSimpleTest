@@ -84,5 +84,19 @@ public class GeneratedTests extends TestBase {
             mainPage.checkChatText();
         });
     }
+    @Test
+    @DisplayName("Проверка поиска пункта выдачи")
+    void searchPickupPoints() {
+        step("Проверка видимости окна поиска пункта выдачи", () -> {
+            mainPage.deliveryWindow();
+        });
+
+        step("Ввод актуального домашнего адреса", () -> {
+            mainPage.searchAdrress();
+        });
+        step("Проверка корректного поиска пункта выдачи", () -> {
+            mainPage.checkResultAdrress();
+        });
+    }
 }
 

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class BasketPage {
-    private final SelenideElement actualProductName = $(".list-item__good-info");
+    private final SelenideElement actualProductName = $(".good-info__good-name");
     private final SelenideElement counter = $(".count__plus");
     private final SelenideElement emptyBasket = $(".basket-page__basket-empty");
 
